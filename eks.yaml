@@ -1,0 +1,12 @@
+apiVersion: eksctl.io/v1alpha5
+kind: project-roboshop
+
+metadata:
+  name: k8-eksctl
+  region: us-east-1
+
+managedNodeGroups:
+  - name: spot
+    instanceType: m5.large
+    desiredCapacity: 3
+    spot: true
